@@ -1,0 +1,175 @@
+*{
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+body{
+ font-family: 'Open Sans', sans-serif;
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+  background-image:linear-gradient( rgba(73, 58, 58, 0.5), rgba(0, 0, 0, 0.5) ) , url('img/pexels-photo-590045.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover; 
+  line-height: 1.6;
+}
+ 
+a{
+  color:#f77062;
+  text-decoration: none;
+  font:bold;
+  font-size: medium;
+  font-size: 19px;
+}
+
+.container{
+  margin-left: auto;
+  margin-right:auto; 
+  display:inline-flex;
+  box-shadow: 0px 4px 26px 3px rgba(0, 0, 0, 0.69);
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  height:90vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.first-div{
+  justify-content: center;
+  align-content: center;
+  background:linear-gradient( rgba(22, 151, 202, 0.705), rgb(0, 0, 0, 0.6) ),url('img/pexels-photo-951236.jpeg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 40%;
+  height: 100%;
+  padding: 1em;
+  text-align: center;
+  color:#fff;
+}
+
+.first-div #main{
+  font-family: 'Montserrat', sans-serif;
+  font-size:48px;
+  font:300;
+  color:#00c7a4;
+}
+
+.first-div .sub-con{
+  font-family: 'Open Sans', sans-serif;
+  font-size:19px;
+}
+
+.first-div .sub-con span{
+  color:#f0bebe;
+  font-size: 25px;
+}
+ .first-div .inner{
+   color:#00c7a4;
+   font-size: 18px;
+} 
+
+.second-div{
+  justify-content: center;
+  align-content: center;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  padding: 6em;
+  margin:0;
+  min-height: 300px;
+}
+.second-div .contain-form{
+  margin-top:-10px;
+}
+
+
+.second-div label{
+  display: block;
+  font:bold;
+  font-size:18px;
+  text-transform: uppercase;
+  margin-top:8px; 
+}
+
+.second-div input[type=text],
+.second-div input[type=email], 
+.second-div input[type=password]{
+  border: 0px none;
+  border-bottom: 1px solid #f77062;
+  width: 90%;
+  padding:10px 5px 10px 5px;
+  color:black;
+  font-size: 16px;
+}
+
+.second-div input[type=text]:focus, 
+.second-div input[type=email]:focus,
+.second-div input[type=password]:focus,
+.second-div input[type=submit]:active{
+  outline: 0;
+}
+
+.second-div form .form-group{
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+.second-div input[type=submit]{
+  padding:12px 18px 12px 18px;
+  border-radius: 20px;
+  font-size:18px;
+  border:0; 
+  margin:15px;
+  background:#f77062;
+  color: #f4f4f4;
+  width:90%;
+}
+
+.second-div input[type=submit]:hover{
+ background:#fd412c;
+ color: #fff;
+ transition: ease 0.4s;
+ cursor: pointer;  
+ box-shadow: 0 0 40px 4px rgba(0,0,0,0.12);
+}
+.second-div input[type=submit]:active{
+  outline: 0;
+}
+
+@media (max-width:696px){
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+  .first-div{
+    width: 100%;
+    height: 50%;
+    margin:0px;
+    padding: 0;
+  }
+  .first-div p{
+    font-size: 20px !important;
+    margin:10px;
+  }
+  .first-div p #main{
+    font-size: 30px !important;
+  }
+  .second-div{
+    width: 100%;
+    height: 100%;
+    margin:0px;
+    padding: 35px;
+    margin-top:-40px;
+  }
+  input[type=submit]{
+    margin-top:-40px !important;
+    margin-bottom: 40px !important;
+  }
+}
